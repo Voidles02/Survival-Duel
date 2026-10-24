@@ -1,0 +1,21 @@
+name: SurvivalDuel
+version: duel.v1
+main: kdi.survivalduel.SurvivalDuelPlugin
+api-version: '1.21'
+authors: [voidles02]
+description: Lightweight survival-world duels using players' own gear.
+commands:
+  duel:
+    description: Challenge players and manage group duels.
+    usage: /duel <player|accept|deny|cancel|forfeit|group|reload>
+    permission: survivalduel.use
+permissions:
+  survivalduel.use:
+    description: Use duels.
+    default: true
+  survivalduel.group:
+    description: Create and manage duel groups.
+    default: true
+  survivalduel.admin:
+    description: Reload SurvivalDuel.
+    default: op
